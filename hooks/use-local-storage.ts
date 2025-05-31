@@ -31,7 +31,6 @@ export function useLocalStorage<T>(key: string, initialValue: T) {
     }
   }
 
-  // Listen for changes to this local storage item in other tabs/windows
   useEffect(() => {
     function handleStorageChange(e: StorageEvent) {
       if (e.key === key && e.newValue) {

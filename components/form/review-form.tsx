@@ -23,17 +23,17 @@ export function ReviewForm({ formState, prevStep, resetForm }: ReviewFormProps) 
   const { toast } = useToast()
   
   const handleSubmit = () => {
-    // Log the form data to console as required
+    
     console.log('Submitted user data:', formState)
     
-    // Show success toast
+    
     toast({
       title: 'User Added Successfully',
       description: `${formState.name} has been added to the system.`,
       variant: 'default',
     })
     
-    // Reset the form
+    
     resetForm()
   }
 
